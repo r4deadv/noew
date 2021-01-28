@@ -109,17 +109,35 @@ nav ul li a:active {
 .product:nth-of-type(3) {
 	margin-right: 0;
 }
-#products .product p {
+#products .product a {
+	display: block;
+}
+#products .product a span {
+	display: block;
 	color: #FFF;
 	/*height: 50px;*/
-	background: url("images/bar.png");
-	border-bottom: 5px solid #072A3F;
 	margin: 5px 0 0;
 	font-size: 1.7em;
 	font-weight: 500;
 	line-height: 50px;
 	text-align: center;
 	text-transform: uppercase;
+}
+#products .product a:link span,
+#products .product a:visited span {
+	background: url("images/bar.png");
+	border-bottom: 5px solid #072A3F;
+}
+#products .product a:hover span {
+	background: #A2631D;
+	border-bottom: 5px solid #7E4404;
+}
+#products .product a:active span {
+	background: #072A3F;
+	color: #C2823A;
+}
+#products .product a:hover img {
+	filter: sepia(30%);
 }
 main {
 	width: 465px;
@@ -185,6 +203,7 @@ footer .footer-text:nth-of-type(2){
 	border-top: 5px solid #96AFBA; 
 	text-align: center;
 	line-height: 35px;
+	font-size: 12px;
 }
 footer p {
 	margin: 0;
