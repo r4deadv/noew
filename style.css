@@ -75,22 +75,45 @@ nav ul li a:active {
 	background: #072A3F;
 	color: #C2823A;
 }
-
+nav ul li span {
+	display: none;
+}
+nav ul li:hover span {
+	display: inline;
+}
+.fa-chevron-right {
+	font-size: 0.8em;
+	vertical-align: -2px;
+}
+.fa-chevron-down {
+	vertical-align: -4px;
+	font-size: 1.1em;
+}
 nav ul li ul {
 	display: none; /* u startu */
-}
-nav ul li:hover ul {
-	display: block; /* otvaranje */
 	background: rgba(22,78,102,0.80);
 	position: absolute;
 	top: 100%;
 	left: 0;
 	z-index: 1000;
-	width: 140px;
+	width: 150px;
+}
+nav ul li:hover > ul {
+	display: block; /* otvaranje */
+	
 }
 nav ul li ul li {
 	float: none;
 }
+nav ul li ul li ul {
+	background: rgba(22,78,102,0.60);
+	top: 0;
+	left: 100%;
+}
+nav ul li ul li ul li ul {
+	background: rgba(22,78,102,0.40);
+}
+
 #hero {
 	position: relative;
 	margin-bottom: 20px;
@@ -168,7 +191,7 @@ nav ul li ul li {
 	visibility: hidden;
 }
 #products .product a:hover .filter {
-	visibility: visible; 
+	visibility: visible;
 }
 #products .product a:active .filter {
 	opacity: 70%; 
