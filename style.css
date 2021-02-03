@@ -216,6 +216,9 @@ main {
 	float: left;
 	margin-bottom: 20px;
 }
+.o-nama main {
+	width: 650px;
+}
 main h2 {
 	color: #164E66;
 	font-size: 2em;
@@ -226,6 +229,9 @@ aside {
 	background: #E4EEEF;
 	padding: 20px;
 	margin-bottom: 20px;
+}
+.o-nama aside {
+	width: 250px;
 }
 aside h3 {
 	color: #164E66;
